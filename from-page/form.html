@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form-style.css">
+  <title>login_form</title>
+</head>
+<body>
+      <form onsubmit="return checkPassword()" style="text-align: center;" action="post">
+
+        <!---text iput for username is input --->
+
+      <label for="username">Enter your username</label>
+      <input type="text" id="username" placeholder="username" required>
+          <br><br>
+
+      <!---text input for gender input --->
+      <label for="gender">Gender</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">female</label>
+      <br><br>
+
+
+      <!---this is for password--->
+
+      <label for="password">Password</label>
+      <input type="password" placeholder="password" name="password" id="password" required>
+
+      <br><br>
+
+      <!--confirm passsword-->
+
+      <label for="password">Confirm Password</label>
+      <input type="password" placeholder="confirmPassword" name="password" id="confirmPassword" required>
+      <br><br>
+
+      
+
+      
+
+
+<!--coments and select option -->
+<select name="fruits">
+  <option value="apple">Apple</option>
+  <option value="banana">Banana</option>
+  <option value="cherry">Cherry</option>
+</select>
+<textarea name="comment" rows="4" cols="50">Enter your comment here...</textarea>
+
+
+
+<!---submit button-->
+<input type="submit" value="submit">
+
+
+    </form>
+
+
+
+
+<script>
+  function checkPassword() {
+    const pass = document.getElementById("password").value;
+    const confirmPass = document.getElementById("confirmPassword").value;
+
+    if (pass !== confirmPass) {
+      alert("Passwords do not match!");
+      return false; // prevent form submission
+    }
+
+    return true; // allow form submission
+  }
+</script>
+
+
+
+
+
+
+</body>
+</html>

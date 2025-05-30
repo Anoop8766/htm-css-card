@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+  .box1{
+  box-sizing: border-box;
+  background-color: aquamarine;
+  width: 80vw;
+  border: 2px solid blueviolet;
+  height: 80vh;
+  margin: 23px auto;
+  
+}
+
+.box2{
+  box-sizing: border-box;
+  background-color: aquamarine;
+  width: 80vw;
+  border: 2px solid blueviolet;
+  /* height: 80vh; */
+  margin: 23px auto;
+  min-height: 100vh;
+}
+
+.mycont{
+  box-sizing: border-box;
+  color: blueviolet;
+  background-color: plum;
+  font-size: 18px;
+  margin: 23px auto;
+  border: solid red;
+}

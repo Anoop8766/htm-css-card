@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>position</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .parent {
+      border: 2px solid red;
+      margin: 34px;
+      padding: 43px;
+      height: 500vh;
+
+      /* position: ; */
+    }
+
+    .box {
+      border: 2px solid black;
+      width: 60vw;
+      height: 15vh;
+      margin: 3px;
+      padding: 4px;
+      /* position: relative; */
+    }
+
+    .box1 {
+      background-color: #f53636;
+      position: absolute;
+      /* z-index: 0; */
+      /* position: absolute; */
+      top: 10px;
+    }
+
+    .box2 {
+      background-color: #d0f182;
+      /* position: relative; */
+    }
+
+    .box3 {
+      background-color: #4ccf8e;
+    }
+
+    .box4 {
+      background-color: #fc66f4;
+    }
+  </style>
+
+  <body>
+    <div class="parent">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+    </div>
+  </body>
+</html>
